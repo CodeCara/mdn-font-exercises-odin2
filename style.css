@@ -1,0 +1,137 @@
+/* General setup */
+@font-face {
+    font-family: 'alegreyaregular';
+    src: url('fonts/alegreya-regular-webfont.woff2') format('woff2'),
+         url('fonts/alegreya-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aller_displayregular';
+    src: url('fonts/allerdisplay-webfont.woff2') format('woff2'),
+         url('fonts/allerdisplay-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'aller_displayregular';
+    font-size: 10px;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.3rem;
+
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid hwb(0 32% 33%);
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'alegreyaregular';
+    letter-spacing: 0.1rem;
+  }
+
+  h1{font-size: 2rem;
+text-align: center;}
+
+  h2 {font-size: 1.6rem;}
+
+  h2 + p {text-indent: 20px;}
+
+  a:visited
+  {color: purple;}
+
+  a:focus
+  {color:blueviolet;
+text-decoration: none;
+outline: none;
+}
+
+  a:hover
+  {background-color:antiquewhite;
+text-decoration: none;}
+
+a:active{
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+a[href^="http"]::after,
+a[href^="https://"]::after
+
+
+ { content: "";
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  background-image: url("external-link-52.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+
+li
+{line-height: 1.5rem;}
+
+ul
+{margin-top: 10px;
+  margin-bottom: 10px;
+list-style-type:square;}
+
+
+nav ul li
+{background-color: gainsboro;
+  width: 8rem;
+  list-style: none;
+  border: 2px solid black;
+margin-bottom: 2rem;
+padding: 0.4rem;
+text-align: center;
+}
